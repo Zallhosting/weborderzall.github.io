@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZALLORDER</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f8f8;
+    }
+    header {
+      background-color: #ff0000; /* Red background */
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+    .container {
+      width: 85%;
+      margin: 0 auto;
+      padding: 30px 0;
+    }
+    h2 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 30px;
+    }
+    .price-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 30px;
+    }
+    .price-item {
+      background-color: #fff;
+      padding: 20px;
+      text-align: center;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      border: 2px solid #e5e5e5;
+    }
+    .price-item h3 {
+      font-size: 20px;
+      color: #ff0000; /* Red heading */
+    }
+    .price-item p {
+      font-size: 18px;
+      color: #333;
+      margin: 10px 0;
+    }
+    .order-btn {
+      background-color: #128c7e; /* WhatsApp green */
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 15px;
+    }
+    .order-btn:hover {
+      background-color: #25d366;
+    }
+    .price-item select, .price-item input {
+      padding: 8px;
+      margin: 10px 0;
+      font-size: 16px;
+      width: 100%;
+      border-radius: 5px;
+      border: 1px solid #ddd;
+    }
+    .price-item .order-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .price-item .order-wrapper .order-btn {
+      width: 40%;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Selamat Datang di ZALLORDER</h1>
+    <p>Pesan Diamond, Pulsa, dan Layanan lainnya dengan mudah</p>
+  </header>
+
+  <div class="container">
+    <h2>Daftar Harga</h2>
+    <div class="price-list">
+
+      <!-- Free Fire -->
+      <div class="price-item">
+        <h3>Diamond Free Fire</h3>
+        <p><span>5 Diamond:</span> Rp935</p>
+        <p><span>12 Diamond:</span> Rp1.995</p>
+        <p><span>50 Diamond:</span> Rp6.885</p>
+        <p><span>70 Diamond:</span> Rp9.585</p>
+        <p><span>200 Diamond:</span> Rp27.000</p>
+        <p><span>500 Diamond:</span> Rp67.500</p>
+        <p><span>1000 Diamond:</span> Rp135.000</p>
+        <p><span>2000 Diamond:</span> Rp230.000</p>
+        <p><span>5000 Diamond:</span> Rp575.000</p>
+        <p><span>10.000 Diamond:</span> Rp1.000.000</p>
+
+        <div class="order-wrapper">
+          <select id="ff-diamonds">
+            <option value="935">5 Diamond</option>
+            <option value="1995">12 Diamond</option>
+            <option value="6885">50 Diamond</option>
+            <option value="9585">70 Diamond</option>
+            <option value="27000">200 Diamond</option>
+            <option value="67500">500 Diamond</option>
+            <option value="135000">1000 Diamond</option>
+            <option value="230000">2000 Diamond</option>
+            <option value="575000">5000 Diamond</option>
+            <option value="1000000">10.000 Diamond</option>
+          </select>
+          <a href="https://wa.me/6285246691849?text=Saya%20ingin%20order%20Diamond%20Free%20Fire%20sebesar%20Rp" id="ff-order" class="order-btn">Order di WhatsApp</a>
+        </div>
+      </div>
+      
+      <!-- Mobile Legends -->
+      <div class="price-item">
+        <h3>Diamond Mobile Legends</h3>
+        <p><span>5 Diamond:</span> Rp1.560</p>
+        <p><span>12 Diamond:</span> Rp3.640</p>
+        <p><span>50 Diamond:</span> Rp14.200</p>
+        <p><span>100 Diamond:</span> Rp28.400</p>
+        <p><span>200 Diamond:</span> Rp57.600</p>
+        <p><span>384 Diamond:</span> Rp107.536</p>
+        <p><span>500 Diamond:</span> Rp134.200</p>
+        <p><span>1000 Diamond:</span> Rp268.400</p>
+        <p><span>2000 Diamond:</span> Rp536.800</p>
+        <p><span>3000 Diamond:</span> Rp805.200</p>
+
+        <div class="order-wrapper">
+          <select id="ml-diamonds">
+            <option value="1560">5 Diamond</option>
+            <option value="3640">12 Diamond</option>
+            <option value="14200">50 Diamond</option>
+            <option value="28400">100 Diamond</option>
+            <option value="57600">200 Diamond</option>
+            <option value="107536">384 Diamond</option>
+            <option value="134200">500 Diamond</option>
+            <option value="268400">1000 Diamond</option>
+            <option value="536800">2000 Diamond</option>
+            <option value="805200">3000 Diamond</option>
+          </select>
+          <a href="https://wa.me/6285246691849?text=Saya%20ingin%20order%20Diamond%20Mobile%20Legends%20sebesar%20Rp" id="ml-order" class="order-btn">Order di WhatsApp</a>
+        </div>
+      </div>
+
+      <!-- Isi Saldo DANA -->
+      <div class="price-item">
+        <h3>Isi Saldo DANA</h3>
+        <p><span>Rp10.000:</span> Rp10.000</p>
+        <p><span>Rp25.000:</span> Rp25.000</p>
+        <p><span>Rp50.000:</span> Rp50.000</p>
+        <p><span>Rp100.000:</span> Rp100.000</p>
+        <p><span>Rp200.000:</span> Rp200.000</p>
+        <p><span>Rp500.000:</span> Rp500.000</p>
+        <p><span>Rp1.000.000:</span> Rp1.000.000</p>
+
+        <div class="order-wrapper">
+          <select id="dana-balance">
+            <option value="10000">Rp10.000</option>
+            <option value="25000">Rp25.000</option>
+            <option value="50000">Rp50.000</option>
+            <option value="100000">Rp100.000</option>
+            <option value="200000">Rp200.000</option>
+            <option value="500000">Rp500.000</option>
+            <option value="1000000">Rp1.000.000</option>
+          </select>
+          <a href="https://wa.me/6285246691849?text=Saya%20ingin%20order%20Isi%20Saldo%20DANA%20Rp" id="dana-order" class="order-btn">Order di WhatsApp</a>
+        </div>
+      </div>
+
+      <!-- Isi Saldo Gopay -->
+      <div class="price-item">
+        <h3>Isi Saldo Gopay</h3>
+        <p><span>Rp10.000:</span> Rp10.000</p>
+        <p><span>Rp25.000:</span> Rp25.000</p>
+        <p><span>Rp50.000:</span> Rp50.000</p>
+        <p><span>Rp100.000:</span> Rp100.000</p>
+        <p><span>Rp200.000:</span> Rp200.000</p>
+        <p><span>Rp500.000:</span> Rp500.000</p>
+        <p><span>Rp1.000.000:</span> Rp1.000.000</p>
+
+        <div class="order-wrapper">
+          <select id="gopay-balance">
+            <option value="10000">Rp10.000</option>
+            <option value="25000">Rp25.000</option>
+            <option value="50000">Rp50.000</option>
+            <option value="100000">Rp100.000</option>
+            <option value="200000">Rp200.000</option>
+            <option value="500000">Rp500.000</option>
+            <option value="1000000">Rp1.000.000</option>
+          </select>
+          <a href="https://wa.me/6285246691849?text=Saya%20ingin%20order%20Isi%20Saldo%20Gopay%20Rp" id="gopay-order" class="order-btn">Order di WhatsApp</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    // Update WhatsApp link with selected value from dropdown
+    document.getElementById('ff-diamonds').addEventListener('change', function() {
+      document.getElementById('ff-order').href = "https://wa.me/6285246691849?text=Saya%20ingin%20order%20Diamond%20Free%20Fire%20sebesar%20Rp" + this.value;
+    });
+
+    document.getElementById('ml-diamonds').addEventListener('change', function() {
+      document.getElementById('ml-order').href = "https://wa.me/6285246691849?text=Saya%20ingin%20order%20Diamond%20Mobile%20Legends%20sebesar%20Rp" + this.value;
+    });
+
+    document.getElementById('dana-balance').addEventListener('change', function() {
+      document.getElementById('dana-order').href = "https://wa.me/6285246691849?text=Saya%20ingin%20order%20Isi%20Saldo%20DANA%20Rp" + this.value;
+    });
+
+    document.getElementById('gopay-balance').addEventListener('change', function() {
+      document.getElementById('gopay-order').href = "https://wa.me/6285246691849?text=Saya%20ingin%20order%20Isi%20Saldo%20Gopay%20Rp" + this.value;
+    });
+  </script>
+</body>
+</html>
